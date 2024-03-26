@@ -1,0 +1,20 @@
+{
+    "name": "vif-benchmark",
+    "type": "module",
+    "scripts": {
+        "build-prod": "rollup -c",
+        "dev": "rollup -c -w"
+    },
+    "js-framework-benchmark": {
+        "frameworkVersionFromPackage": "vifjs",
+        "frameworkHomeURL": "https://vifjs.dev/"
+    },
+    "devDependencies": {
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-terser": "^0.4.4",
+        "rollup": "^4.13.0"
+    },
+    "dependencies": {
+        "vifjs": "^0.0.6"
+    }
+}

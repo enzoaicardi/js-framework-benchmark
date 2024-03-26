@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { create } from "zustand";
 import { jStat } from "jstat";
 import { knownIssues } from "@/helpers/issues";
@@ -16,7 +18,7 @@ import {
   CpuDurationMode,
 } from "@/Common";
 
-const removeKeyedSuffix = (value: string) => {
+const removeKeyedSuffix = (value: string = "") => {
   return value.replace(/-keyed|-non-keyed$/, "");
 };
 
